@@ -36,6 +36,13 @@ export const metadata: Metadata = {
     description: "Premium short-form, YouTube edits, and brand films — delivered in 48 hours.",
   },
   robots: { index: true, follow: true },
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/logo-mark.svg", type: "image/svg+xml", sizes: "any" },
+    ],
+    apple: "/favicon.svg",
+  },
 };
 
 const jsonLd = {
