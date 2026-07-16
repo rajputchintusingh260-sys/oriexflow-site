@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 96" role="img" aria-label="OriexFlow">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 96" role="img" aria-label="OriexFlow">
   <title>OriexFlow</title>
   <defs>
     <linearGradient id="ofMarkGrad" x1="16" y1="16" x2="80" y2="80" gradientUnits="userSpaceOnUse">
@@ -15,7 +15,7 @@
     <circle cx="72" cy="24" r="6" fill="#22d3ee"/>
   </g>
   <text x="104" y="48"
-        font-family="'Syncopate','Space Grotesk','Helvetica Neue',system-ui,sans-serif"
-        font-weight="700" font-size="42" letter-spacing="-1"
+        font-family="'Clash Display','Space Grotesk','Helvetica Neue',system-ui,sans-serif"
+        font-weight="700" font-size="40" letter-spacing="-1"
         dominant-baseline="middle" fill="#ffffff">Oriex<tspan fill="url(#ofTextGrad)">Flow</tspan></text>
 </svg>
