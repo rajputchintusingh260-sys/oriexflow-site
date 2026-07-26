@@ -2,17 +2,21 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import { usePathname } from "next/navigation";
 import { EASE } from "@/lib/motion";
 
 const WORD = "ORIEXFLOW";
 
 /** Full-screen loader: wordmark types out, gradient bar fills, clip-path exit. */
 export default function Preloader() {
-  const [done, setDone] = useState(false);
+  const pathname = usePathname();
+  const skip = pathname?.startsWith("/dashboard") ?? false;
+  const [done, setDone] = useState(skip);
   const [chars, setChars] = useState(0);
   const reduce = useReducedMotion();
 
   useEffect(() => {
+    if (skip) return;
     if (reduce) {
       setDone(true);
       return;
@@ -31,7 +35,9 @@ export default function Preloader() {
       clearInterval(typing);
       clearTimeout(exit);
     };
-  }, [reduce]);
+  }, [reduce, skip]);
+
+  if (skip) return null;
 
   return (
     <AnimatePresence>

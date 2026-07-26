@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { usePathname } from "next/navigation";
 import { prefersReducedMotion } from "@/lib/motion";
 
 /**
@@ -11,6 +12,8 @@ import { prefersReducedMotion } from "@/lib/motion";
  * native cursor returns on inputs.
  */
 export default function Cursor() {
+  const pathname = usePathname();
+  const skip = pathname?.startsWith("/dashboard") ?? false;
   const wrapRef = useRef<HTMLDivElement>(null);
   const coreRef = useRef<HTMLDivElement>(null);
   const ringRef = useRef<HTMLDivElement>(null);
@@ -18,6 +21,7 @@ export default function Cursor() {
   const labelRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
+    if (skip) return;
     const fine = window.matchMedia("(pointer: fine)").matches;
     if (!fine || prefersReducedMotion()) return;
 
@@ -97,7 +101,9 @@ export default function Cursor() {
       window.removeEventListener("mousedown", down);
       window.removeEventListener("mouseup", up);
     };
-  }, []);
+  }, [skip]);
+
+  if (skip) return null;
 
   return (
     <div

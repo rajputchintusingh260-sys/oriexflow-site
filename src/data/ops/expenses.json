@@ -1,0 +1,10 @@
+{
+  "recurring": [
+    { "category": "House Rent", "amount": 0, "currency": "INR", "frequency": "monthly", "notes": "Fill actual rent amount" },
+    { "category": "Adobe Creative Cloud", "amount": 4500, "currency": "INR", "frequency": "monthly", "notes": "Placeholder — update actual" },
+    { "category": "Vercel", "amount": 0, "currency": "USD", "frequency": "monthly", "notes": "Hobby free tier" },
+    { "category": "n8n Cloud / Server", "amount": 0, "currency": "USD", "frequency": "monthly", "notes": "" },
+    { "category": "ChatGPT / Claude", "amount": 20, "currency": "USD", "frequency": "monthly", "notes": "" }
+  ],
+  "oneOff": []
+}

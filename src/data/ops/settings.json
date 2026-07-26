@@ -1,0 +1,11 @@
+{
+  "agency": "ORIEXFLOW",
+  "owner": "Chintu Singh",
+  "displayCurrency": "INR",
+  "usdToInr": 83,
+  "goals": {
+    "monthlyRevenueUSD": 100000,
+    "targetClientPriceUSD": 2500,
+    "targetClientCount": 40
+  }
+}

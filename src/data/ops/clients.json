@@ -1,0 +1,15 @@
+[
+  {
+    "id": "heavyhaul",
+    "name": "HeavyHaul HQ",
+    "contact": "Gabe Picciolo",
+    "package": "SMM Monthly",
+    "monthlyAmount": 0,
+    "currency": "USD",
+    "status": "active",
+    "startDate": "",
+    "nextPayment": "",
+    "editor": "",
+    "notes": "Placeholder amount — replace with actual monthly retainer"
+  }
+]
